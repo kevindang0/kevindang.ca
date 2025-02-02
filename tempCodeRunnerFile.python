@@ -1,0 +1,73 @@
+import pyautogui
+import time
+import random
+import keyboard
+from threading import Thread
+
+# Ensure safe exit is possible
+pyautogui.FAILSAFE = True  # Move mouse to upper-left corner to stop
+
+class AutoClicker:
+    def __init__(self):
+        self.running = False
+        self.program_running = True
+
+    def start_clicking(self):
+        self.running = True
+        
+    def stop_clicking(self):
+        self.running = False
+        
+    def exit(self):
+        self.program_running = False
+
+    def display_instructions(self):
+        print("Auto Clicker Instructions:")
+        print("- Press 'F6' to start clicking")
+        print("- Press 'F7' to stop clicking")
+        print("- Press 'F8' to exit the program")
+        print("- Move mouse to upper-left corner to force stop")
+        print("\nWaiting for input...")
+
+    def check_keys(self):
+        while self.program_running:
+            if keyboard.is_pressed('F6'):
+                self.start_clicking()
+                print("Auto clicking started...")
+            elif keyboard.is_pressed('F7'):
+                self.stop_clicking()
+                print("Auto clicking paused...")
+            elif keyboard.is_pressed('F8'):
+                self.stop_clicking()
+                self.exit()
+                print("Exiting program...")
+                break
+            time.sleep(0.1)
+
+    def click(self):
+        while self.program_running:
+            if self.running:
+                # Random delay between 0.5 and 2 seconds
+                delay = random.uniform(0.02, .05)
+                pyautogui.click()
+                time.sleep(delay)
+            time.sleep(0.1)
+
+    def run(self):
+        self.display_instructions()
+        
+        # Create separate threads for checking keys and clicking
+        click_thread = Thread(target=self.click)
+        key_thread = Thread(target=self.check_keys)
+        
+        # Start both threads
+        click_thread.start()
+        key_thread.start()
+        
+        # Wait for threads to complete
+        key_thread.join()
+        click_thread.join()
+
+if __name__ == "__main__":
+    auto_clicker = AutoClicker()
+    auto_clicker.run()
