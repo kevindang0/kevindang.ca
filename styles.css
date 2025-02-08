@@ -15,7 +15,7 @@ nav {
     position: fixed;
     top: -50px;
     width: 100%;
-    background: #ffca6eea;
+    background: #ffe46eea;
     padding: 10px 0;
     text-align: center;
     z-index: 10;
@@ -128,25 +128,23 @@ nav ul li a:hover {
 
 /* Adjustments for the 2nd and 3rd slides */
 .content-slide:nth-child(2) img,
-.content-slide:nth-child(3) img {
+.content-slide:nth-child(3) img,
+.content-slide:nth-child(4) img,
+.content-slide:nth-child(5) img{
     max-width: 85%; /* Adjust as needed */
     max-height: 50%; /* Adjust as needed */
+    min-width: 700px;
+    min-height: 500px;
+
     object-fit: contain;
     margin: 10px auto;
     border-radius: 10px;
-    transform: translateY(-0px); /* Adjust vertical positioning */
+    transform: translateY(0px); /* Adjust vertical positioning */
+    height: 900px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
-/* Ensure the text and other content in the 2nd and 3rd slides are aligned properly */
-.content-slide:nth-child(2) img,
-.content-slide:nth-child(3) img {
-    width: 50%; /* Set a fixed width */
-    height: 800px; /* Set a fixed height */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border-radius: 10px;
-    margin: 10px auto;
-    transform: translateY(0); /* Reset any vertical translation */
-}
+
 
 /* Adjust the wrapper for the 2nd and 3rd slides */
 .content-slide:nth-child(2),
