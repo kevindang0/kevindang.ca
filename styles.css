@@ -5,7 +5,7 @@ body {
     height: auto;
     min-height: 300vh;
     overflow-x: hidden;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, sans-serif;
     scroll-behavior: smooth;
     color: #fff0e8;
     background: #151414;
@@ -15,7 +15,7 @@ nav {
     position: fixed;
     top: -50px;
     width: 100%;
-    background: #ffe46eea;
+    background: #ffc36eea;
     padding: 10px 0;
     text-align: center;
     z-index: 10;
@@ -36,6 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: sans-serif, sans-serif;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
@@ -49,6 +50,7 @@ nav ul li a:hover {
 }
 
 .block {
+    
     position: relative;
     width: 100%;
     height: 100vh;
@@ -58,6 +60,7 @@ nav ul li a:hover {
 }
 
 #about, #experience, #projects {
+    font-family: sans-serif, sans-serif;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -71,6 +74,7 @@ nav ul li a:hover {
 }
 
 .cutout {
+    
     position: relative;
     width: 85%;
     height: 660px;
@@ -86,6 +90,7 @@ nav ul li a:hover {
 }
 
 .content-slide {
+    font-family: sans-serif, sans-serif;
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -118,6 +123,7 @@ nav ul li a:hover {
 
 /* Article slides (non-first slides) specific styles */
 .content-slide:not(:first-child) img {
+    
     max-width: 85%;
     max-height: 60%;
     object-fit: contain;
@@ -131,6 +137,7 @@ nav ul li a:hover {
 .content-slide:nth-child(3) img,
 .content-slide:nth-child(4) img,
 .content-slide:nth-child(5) img{
+    
     max-width: 85%; /* Adjust as needed */
     max-height: 50%; /* Adjust as needed */
     min-width: 700px;
@@ -139,7 +146,7 @@ nav ul li a:hover {
     object-fit: contain;
     margin: 10px auto;
     border-radius: 10px;
-    transform: translateY(0px); /* Adjust vertical positioning */
+    transform: translateY(-50px); /* Adjust vertical positioning */
     height: 900px; /* Set a fixed height */
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
@@ -153,6 +160,7 @@ nav ul li a:hover {
     align-items: center; /* Center content horizontally */
 }
 .content-slide h1 {
+    font-family: sans-serif, sans-serif;
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
@@ -160,6 +168,7 @@ nav ul li a:hover {
 }
 
 .content-slide h2 {
+    font-family: sans-serif, sans-serif;
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
@@ -167,6 +176,7 @@ nav ul li a:hover {
 }
 
 .content-slide p {
+    font-family: sans-serif, sans-serif;
     font-size: 24px;
     text-align: center;
     margin:50px;
@@ -175,14 +185,16 @@ nav ul li a:hover {
 }
 
 .content-slide h3 {
+    font-family: sans-serif, sans-serif;
     font-size: 24px;
     text-align: center;
     margin: 10px 0;
     color: #fff0e8;
-    transform: translateY(-20px);
+    transform: translateY(20px);
 }
 
 .content-slide a {
+    font-family: sans-serif, sans-serif;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -222,6 +234,7 @@ button.right-arrow:hover {
 
 /* Image wrapper styles */
 .image-wrapper {
+    
     width: 100%;
     height: auto;
     display: flex;
@@ -238,14 +251,17 @@ button.right-arrow:hover {
     }
 
     .content-slide h2 {
+        font-family: sans-serif, sans-serif;
         font-size: 24px;
     }
 
     .content-slide p {
+        font-family: sans-serif, sans-serif;
         font-size: 18px;
     }   
 
     .content-slide h3 {
+        font-family: sans-serif, sans-serif;
         font-size: 18px;
     }
 
