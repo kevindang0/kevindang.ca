@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Dang's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <main id="content"></main>  
 
-    <footer>
-        <p>© 2024 Kevin Dang | <a href="mailto:your-email@example.com">Contact Me</a></p>
-    </footer>
-
-    <!-- Link to the Water Simulation JavaScript file -->
-    <script src="watersim.js"></script>
-    <!-- Link to the Block JavaScript file -->
-    <script src="block.js"></script>
-    <!-- Link to the Matrix Effect JavaScript file -->
-    <script src="matrixeffect.js"></script>
+    <nav>
+        <ul>
+            <li><a href="#about" class="nav-btn" data-target="about">About Me</a></li>
+            <li><a href="#experience" class="nav-btn" data-target="experience">Experience</a></li>
+            <li><a href="#projects" class="nav-btn" data-target="projects">Projects</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h1 class="fade-text">Kevin Dang</h1>
+        <p class="fade-text">I'm passionate about hardware; primarily Humanoid robotics.</p>
+    </section>
+    
+    <section id="experience">
+        <h1 class="fade-text">Experience</h1>
+        <p class="fade-text"></p>
+    </section>
+    
+    <section id="projects">
+        <h1 class="fade-text">Projects</h1>
+        <p class="fade-text"></p>
+    </section>
+    <script src="smoothscroll.js"></script>
+    <script src="fade.js"></script>
+    <script src = "nav.js"></script>
 </body>
-
 </html>
