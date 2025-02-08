@@ -1,7 +1,7 @@
 const friction = 0.05;
 const maxVelocity = 200; // Maximum allowed velocity to prevent excessive jumps
 let lastScrollTime = 0; // Timestamp to track when the last scroll occurred
-const scrollDelay = 510; // 1 second delay between scroll ticks
+const scrollDelay = 1000; // 1 second delay between scroll ticks
 let currentSectionIndex = 0; // Track the current section index
 
 class SmoothScroll {
