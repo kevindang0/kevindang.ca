@@ -14,7 +14,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: rgb(222, 222, 222);
 }
 
 .text-card {
@@ -24,6 +24,7 @@ body, html {
     padding: 20px;
     display: flex;
     width: 80%;
+    overflow: auto;
     height: 80%; /* Updated to 80% height */
     justify-content: center;
     align-items: center; /* Center vertically */
