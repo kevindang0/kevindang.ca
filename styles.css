@@ -136,7 +136,11 @@ nav ul li a:hover {
 .content-slide:nth-child(2) img,
 .content-slide:nth-child(3) img,
 .content-slide:nth-child(4) img,
-.content-slide:nth-child(5) img{
+.content-slide:nth-child(5) img,
+.content-slide:nth-child(6) img,
+.content-slide:nth-child(7) img{
+    
+    
     
     max-width: 85%; /* Adjust as needed */
     max-height: 50%; /* Adjust as needed */
